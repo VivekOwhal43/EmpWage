@@ -5,7 +5,18 @@ namespace EmpWage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Employee Wage Program");
+            int IS_PRESENT=0;
+            Random random = new Random();
+            int check = random.Next(0,2);
+            if(check == IS_PRESENT)
+            {
+                Console.WriteLine("Absent");
+
+            }
+            else
+            {
+                Console.WriteLine("Present");
+            }
         }
     }
 }

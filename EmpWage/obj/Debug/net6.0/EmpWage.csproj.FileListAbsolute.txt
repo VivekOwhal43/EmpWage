@@ -1,0 +1,15 @@
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/EmpWage
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/EmpWage.deps.json
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/EmpWage.runtimeconfig.json
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/EmpWage.dll
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/ref/EmpWage.dll
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/bin/Debug/net6.0/EmpWage.pdb
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.csproj.AssemblyReference.cache
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.GeneratedMSBuildEditorConfig.editorconfig
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.AssemblyInfoInputs.cache
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.AssemblyInfo.cs
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.csproj.CoreCompileInputs.cache
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.dll
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/ref/EmpWage.dll
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.pdb
+/home/vivek/bridgelabz/Day-3/EmpWage/EmpWage/obj/Debug/net6.0/EmpWage.genruntimeconfig.cache
