@@ -42,8 +42,6 @@ namespace EmpWage
                         empWages = 0;
                         break;
                 }
-
-
                 empWages = empHours * EMP_RATE_PER_HOUR;
                 earnedWages = empWages * DAY;
                 Console.WriteLine($"Employee Wages are {empWages}\nEarned Wages Till Date: {earnedWages}");
