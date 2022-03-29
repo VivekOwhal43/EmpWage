@@ -15,19 +15,19 @@ namespace Empwage
                     switch (check)
                     {
                         case IS_FULLTIME:
-                            Console.WriteLine($"\nDay {DAY} \nPresent");
+                            //Console.WriteLine($"\nDay {DAY} \nPresent");
                             empHours = 8;
-                            Console.WriteLine($"Emp {empHours} Hrs present");
+                            //Console.WriteLine($"Emp {empHours} Hrs present");
                         break;
 
                         case IS_PARTIME:
-                            Console.WriteLine($"\nDay {DAY} \nPresent Part Time");
+                            //Console.WriteLine($"\nDay {DAY} \nPresent Part Time");
                             empHours = 4;
-                            Console.WriteLine($"Emp {empHours} Hrs present");
+                            //Console.WriteLine($"Emp {empHours} Hrs present");
                         break;
 
                         default:
-                            Console.WriteLine($"\nDay {DAY} \nAbsent");
+                            //Console.WriteLine($"\nDay {DAY} \nAbsent");
                             empWages = 0;
                             empHours = 0;
                         break;
