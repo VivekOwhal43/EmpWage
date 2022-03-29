@@ -14,38 +14,48 @@ namespace EmpWage
         static void Main(string[] args)
         {
             int empWages = 0;
-            int empHours = 0;
+            int empHours = 0, DAY = 0;
             int earnedWages = 0;
+            int totalWorkingHours = 0;
 
 
             Random random = new Random();
-
-            for (int DAY = 1; DAY <= MONTH_DAYS; DAY++)
+            do
             {
-                int check = random.Next(0, 3);
-                switch (check)
+                for (DAY = 1; DAY <= MONTH_DAYS; DAY++)
                 {
-                    case IS_FULLTIME:
-                        Console.WriteLine($"\nDay {DAY} \nPresent");
-                        empHours = 8;
-                        Console.WriteLine($"Emp {empHours} Hrs present");
-                        break;
+                    int check = random.Next(0, 3);
+                    switch (check)
+                    {
+                        case IS_FULLTIME:
+                            Console.WriteLine($"\nDay {DAY} \nPresent");
+                            empHours = 8;
+                            Console.WriteLine($"Emp {empHours} Hrs present");
+                            break;
 
-                    case IS_PARTIME:
-                        Console.WriteLine($"\nDay {DAY} \nPresent Part Time");
-                        empHours = 4;
-                        Console.WriteLine($"Emp {empHours} Hrs present");
-                        break;
+                        case IS_PARTIME:
+                            Console.WriteLine($"\nDay {DAY} \nPresent Part Time");
+                            empHours = 4;
+                            Console.WriteLine($"Emp {empHours} Hrs present");
+                            break;
 
-                    default:
-                        Console.WriteLine($"\nDay {DAY} \nAbsent");
-                        empWages = 0;
+                        default:
+                            Console.WriteLine($"\nDay {DAY} \nAbsent");
+                            empWages = 0;
+                            empHours = 0;
+                            break;
+                    }
+                    empWages = empHours * EMP_RATE_PER_HOUR;
+                    earnedWages = empWages * DAY;
+                    totalWorkingHours += DAY * empHours;
+                    Console.WriteLine($"Total Working Hours Till Date are {totalWorkingHours}");
+                    Console.WriteLine($"Employee Wages are {empWages}\nEarned Wages Till Date: {earnedWages}");
+                    if (totalWorkingHours >= 100)
+                    {
                         break;
+                    }
                 }
-                empWages = empHours * EMP_RATE_PER_HOUR;
-                earnedWages = empWages * DAY;
-                Console.WriteLine($"Employee Wages are {empWages}\nEarned Wages Till Date: {earnedWages}");
-            }
+            } while (DAY == 20);
         }
     }
 }
