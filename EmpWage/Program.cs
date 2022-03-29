@@ -1,15 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace EmpWage
 {
-    class Program
+    public class Program
     {
         public const int IS_FULLTIME = 1;
         public const int IS_PARTIME = 2;
         public const int EMP_RATE_PER_HOUR = 20;
         public const int MONTH_DAYS = 20;
-        //int empWages = 0;
+        public static int companyNumber;
         //int empHours = 0;
         public static int empWages = 0;
         public static int empHours = 0, DAY = 0;
@@ -26,40 +27,12 @@ namespace EmpWage
         }
         static void Main(string[] args)
         {
-            Random random = new Random();
-            Program empWagesclass = new Program();
-            do
+            Console.WriteLine("Enter Number of Companies ");
+            companyNumber = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < companyNumber; i++)
             {
-                for (DAY = 1; DAY <= MONTH_DAYS; DAY++)
-                {
-                    int check = random.Next(0, 3);
-                    switch (check)
-                    {
-                        case IS_FULLTIME:
-                            Console.WriteLine($"\nDay {DAY} \nPresent");
-                            empHours = 8;
-                            Console.WriteLine($"Emp {empHours} Hrs present");
-                        break;
-
-                        case IS_PARTIME:
-                            Console.WriteLine($"\nDay {DAY} \nPresent Part Time");
-                            empHours = 4;
-                            Console.WriteLine($"Emp {empHours} Hrs present");
-                        break;
-
-                        default:
-                            Console.WriteLine($"\nDay {DAY} \nAbsent");
-                            empWages = 0;
-                            empHours = 0;
-                        break;
-                    }
-                    empWagesclass.calculateWages();
-                    if (totalWorkingHours >= 100)
-                    {
-                        break;
-                    }
-                }
-            } while (DAY == 20);
+                Console.WriteLine($"printing obj {companyNumber}");
+            }
         }
     }
 }
